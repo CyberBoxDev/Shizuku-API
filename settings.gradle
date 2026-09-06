@@ -7,7 +7,6 @@ pluginManagement {
     plugins {
         id("com.android.application") version "9.4.0"
         id("com.android.library") version "9.4.0"
-        id("org.jetbrains.kotlin.android") version "2.3.21"
         id("dev.rikka.tools.autoresconfig") version "1.2.2"
         id("dev.rikka.tools.materialthemebuilder") version "1.5.1"
         id("dev.rikka.tools.refine") version "4.4.0"
@@ -19,7 +18,8 @@ plugins {
 }
 
 android {
-    compileSdk '37.1'
+    compileSdk 37
+    compileSdkMinor 1
     minSdk 24
     targetSdk 37
     ndkVersion '30.0.16138531 rc3'
